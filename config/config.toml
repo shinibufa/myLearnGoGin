@@ -1,0 +1,26 @@
+#relation database configure
+[mysql]
+host = "127.0.0.1"
+port = 3306
+database = "tiktok"
+username = "zgy"
+password = "740931"
+charset = "utf8mb4"
+parse_time = true
+loc = "Local"
+
+#nosql configure, it stores which user likes which vedio or follow which user.
+[redis]
+host = "127.0.0.1"
+port = 6379
+database = 0
+
+#server's IP address, it is used to generate vedios' links
+[server]
+ip = "192.168.33.251"
+port = 8080
+
+#path of static source and ffmpeg.exe
+[path]
+static_source_path = ""
+ffmpeg_path = ""
